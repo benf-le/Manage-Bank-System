@@ -2668,7 +2668,7 @@ public void CustomerDelete() {
           Customer_sdt.setText(String.valueOf(KH.getSdt()));
 
     }
-     private String[] LoaiGDList = {"CHUYỂN TIỀN", "RÚT TIỀN"};
+     private String[] LoaiGDList = {"NẠP TIỀN", "RÚT TIỀN"};
      public void CRList() {
         List<String> listP = new ArrayList<>();
 
@@ -2733,7 +2733,7 @@ public void CRAdd() {
                 Alert alert = new Alert(AlertType.ERROR);
                 alert.setTitle("Error Message");
                 alert.setHeaderText(null);
-                alert.setContentText("Mã Chuyển/Rút " + CR_id.getText() + " đã tồn tại !");
+                alert.setContentText("Mã Nạp/Rút " + CR_id.getText() + " đã tồn tại !");
                 alert.showAndWait();
                 return;
             } 
@@ -2777,7 +2777,7 @@ public void CRAdd() {
         if (result.next()) {
             BigDecimal currentBalance = new BigDecimal(result.getString("Sodu"));
             BigDecimal newBalance = currentBalance;
-            if (transactionType.equalsIgnoreCase("CHUYỂN TIỀN")) {
+            if (transactionType.equalsIgnoreCase("NẠP TIỀN")) {
                 newBalance = currentBalance.add(transactionAmount);
             } else if (transactionType.equalsIgnoreCase("RÚT TIỀN")) {
                 if (currentBalance.compareTo(transactionAmount) >= 0) {
@@ -2805,7 +2805,7 @@ public void CRAdd() {
        Alert alert = new Alert(AlertType.INFORMATION);
         alert.setTitle("Information Message");
         alert.setHeaderText(null);
-        alert.setContentText("Thực hiện Chuyển/Rút thành công!");
+        alert.setContentText("Thực hiện Nạp/Rút thành công!");
         alert.showAndWait();
 
         // Thực hiện các thao tác khác như cập nhật danh sách, đặt lại form...

@@ -97,12 +97,12 @@
                                     <FontAwesomeIcon fill="#f4f0f0" glyphName="USERS" size="1.5em" />
                                  </graphic>
                               </Button>
-                              <Button fx:id="CR_btn" layoutX="12.0" layoutY="372.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Chuyển/Rút">
+                              <Button fx:id="CR_btn" layoutX="12.0" layoutY="372.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Nạp/Rút">
                                  <graphic>
                                     <FontAwesomeIcon fill="#f4f0f0" glyphName="MONEY" size="1.5em" />
                                  </graphic>
                               </Button>
-                              <Button fx:id="GD_btn" layoutX="12.0" layoutY="407.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Giao Dịch Khác">
+                              <Button fx:id="GD_btn" layoutX="12.0" layoutY="407.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="35.0" prefWidth="180.0" styleClass="nav-btn" stylesheets="@dashboardDesign.css" text="Chuyển tiền">
                                  <graphic>
                                     <FontAwesomeIcon fill="#f4f0f0" glyphName="MONEY" size="1.5em" />
                                  </graphic>
